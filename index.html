@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101116">
-  <meta name="description" content="De Ridder bouwt en onderhoudt websites met reservatiesystemen en beheert sociale media voor restaurants, brasserieën en andere sectoren. Oplossingen vanaf €100 per maand.">
+  <meta name="description" content="Betaalbaar reservatiesysteem op maat voor restaurant of brasserie. Exclusief beheerd, met herinneringen, reviewopvolging en websiteonderhoud. Vanaf €100 per maand.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <title>De Ridder — websites die reservaties binnenhalen</title>
+  <title>Reservatiesysteem op maat voor restaurant of brasserie | De Ridder</title>
   <link rel="canonical" href="https://deridder.be/">
   <link rel="icon" href="assets/logo-de-ridder.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:site_name" content="De Ridder">
-  <meta property="og:title" content="De Ridder — websites, onderhoud en sociale media">
-  <meta property="og:description" content="Websites met reservaties, websiteonderhoud en socialemediabeheer. Oplossingen vanaf €100 per maand.">
+  <meta property="og:title" content="Reservatiesysteem op maat voor restaurant of brasserie | De Ridder">
+  <meta property="og:description" content="Exclusieve online reservaties, herinneringen, reviewopvolging en websiteonderhoud. Een reservatiesysteem voor jouw restaurant, vanaf €100 per maand.">
   <meta property="og:url" content="https://deridder.be/">
   <meta property="og:image" content="https://deridder.be/assets/logo-de-ridder.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://deridder.be/assets/logo-de-ridder.png">
+  <meta name="twitter:title" content="Reservatiesysteem op maat voor restaurant of brasserie | De Ridder">
+  <meta name="twitter:description" content="Exclusieve online reservaties, herinneringen, reviewopvolging en websiteonderhoud. Vanaf €100 per maand.">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -37,6 +40,19 @@
           "name": "De Ridder",
           "inLanguage": "nl-BE",
           "publisher": { "@id": "https://deridder.be/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://deridder.be/#reservatiesysteem",
+          "name": "Reservatiesysteem op maat voor restaurants en brasserieën",
+          "serviceType": [
+            "Reservatiesysteem op maat",
+            "Websiteonderhoud",
+            "Socialemediabeheer"
+          ],
+          "description": "Een exclusief beheerd reservatiesysteem voor je zaak, met opvolging voor en na het bezoek, herinneringen, reviewopvolging en optionele voorschotten. Oplossingen vanaf €100 per maand.",
+          "provider": { "@id": "https://deridder.be/#organization" },
+          "url": "https://deridder.be/#reservatiesysteem"
         }
       ]
     }
@@ -68,7 +84,7 @@
     .topbar { padding: 22px 0; border-bottom: 1px solid #e4e4e8; background: #f4f4f6; }
     .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: inline-flex; align-items: center; text-decoration: none; }
-    .brand img { display: block; width: 205px; height: auto; }
+    .brand img { display: block; width: 240px; height: auto; }
     .nav-link { color: #454650; font-size: .94rem; text-decoration: none; }
     .nav-link:hover, .nav-link:focus-visible { color: #5141df; }
     .hero { position: relative; overflow: hidden; padding: 104px 0 100px; }
@@ -97,6 +113,10 @@
     .starting-price p { margin: 0; color: var(--muted); }
     .starting-price h3 { margin: 0 0 5px; font-size: clamp(1.2rem, 2.4vw, 1.55rem); }
     .starting-price strong { color: var(--teal); }
+    .booking-section { background: linear-gradient(180deg, rgba(120,105,255,.06), transparent 56%); }
+    .booking-intro { max-width: 760px; }
+    .booking-note { margin: 24px 0 0; color: var(--muted); font-size: .88rem; }
+    .section-action { margin-top: 26px; }
     .reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
     .reference-card { overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
     .reference-brand { display: flex; min-height: 150px; align-items: center; justify-content: center; padding: 20px; background: #f4f4f6; }
@@ -133,7 +153,7 @@
     @media (max-width: 520px) {
       .wrap { width: min(calc(100% - 36px), var(--content)); }
       .topbar { padding: 17px 0; }
-      .brand img { width: 168px; }
+      .brand img { width: 184px; }
       .nav-link { font-size: .85rem; }
       .hero { padding-top: 66px; }
       form { grid-template-columns: 1fr; }
@@ -158,8 +178,8 @@
   <main id="home">
     <section class="hero wrap" aria-labelledby="hero-title">
       <p class="eyebrow">Websites op maat</p>
-      <h1 id="hero-title">Meer gemak.<br><span>Meer reservaties.</span></h1>
-      <p class="intro">We bouwen heldere, gebruiksvriendelijke websites die jouw zaak online laten groeien. Met een reservatiesysteem en opvolging op maat van hoe jij werkt.</p>
+      <h1 id="hero-title">Meer reservaties.<br><span>Minder no-shows.</span></h1>
+      <p class="intro">Een betaalbaar reservatiesysteem op maat voor restaurants en brasserieën. Exclusief voor jouw zaak, met persoonlijke opvolging van de eerste aanvraag tot na het bezoek.</p>
       <div class="actions">
         <a class="button" href="#contact">Bespreek jouw website <span aria-hidden="true">&nbsp;↗</span></a>
         <a class="text-link" href="#aanpak">Ontdek wat we doen</a>
@@ -168,7 +188,7 @@
     <section class="section" id="aanpak" aria-labelledby="aanpak-title">
       <div class="wrap">
         <div class="section-heading">
-          <p class="eyebrow">Een oplossing die voor je werkt</p>
+          <p class="eyebrow">Meer dan alleen een website</p>
           <h2 id="aanpak-title">Een sterke online aanwezigheid, goed opgevolgd.</h2>
           <p>We zijn gespecialiseerd in websites voor restaurants en brasserieën, maar reservaties zijn niet gebonden aan één sector. Dezelfde aanpak werkt voor elke onderneming waar klanten een moment willen vastleggen. Ook na de lancering blijven we betrokken.</p>
         </div>
@@ -179,17 +199,12 @@
             <p>We bouwen een verzorgde website en nemen ook het onderhoud ervan voor onze rekening. Zo blijft alles actueel en blijft je site goed werken.</p>
           </article>
           <article class="card">
-            <span class="card-number">02 / RESERVEREN</span>
-            <h3>Reserveren zonder omwegen</h3>
-            <p>Klanten kunnen online een tafel of afspraak aanvragen, op een manier die past bij jouw zaak en sector.</p>
-          </article>
-          <article class="card">
-            <span class="card-number">03 / SOCIALE MEDIA</span>
+            <span class="card-number">02 / SOCIALE MEDIA</span>
             <h3>Jouw zaak in de kijker</h3>
             <p>Volgens een afgesproken werkwijze beheren we je sociale media om extra bezoekers aan te trekken en je zaak in de kijker te zetten.</p>
           </article>
           <article class="card">
-            <span class="card-number">04 / OPVOLGING</span>
+            <span class="card-number">03 / OPVOLGING</span>
             <h3>Overzicht en opvolging</h3>
             <p>Een duidelijke flow om aanvragen en reservaties op te volgen, zodat jij meer tijd hebt voor je klanten.</p>
           </article>
@@ -198,6 +213,41 @@
           <h3>Een oplossing voor elk budget</h3>
           <p>Onze oplossingen starten vanaf <strong>€100 per maand</strong>. We bekijken samen wat past bij jouw zaak en wat je nodig hebt.</p>
         </aside>
+      </div>
+    </section>
+    <section class="section booking-section" id="reservatiesysteem" aria-labelledby="reservatiesysteem-title">
+      <div class="wrap">
+        <div class="section-heading booking-intro">
+          <p class="eyebrow">Reservatiesysteem voor restaurants en brasserieën</p>
+          <h2 id="reservatiesysteem-title">Jouw zaak. Jouw reservatiesysteem. Helemaal op maat.</h2>
+          <p>Geen gedeeld boekingsnetwerk of standaardoplossing waar je zaak zomaar tussen staat. We richten een exclusief reservatieproject in dat bij jouw zaak hoort en volgens jullie afspraken wordt beheerd.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-number">01 / EXCLUSIEF VOOR JOU</span>
+            <h3>Gekoppeld aan jouw zaak</h3>
+            <p>Je reservatieproject wordt op maat ingericht en exclusief voor jouw zaak beheerd, niet gedeeld met andere zaken in een reserveringsnetwerk.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02 / VOOR &amp; NA HET BEZOEK</span>
+            <h3>Opvolging op de juiste momenten</h3>
+            <p>We helpen reservaties op te volgen vóór het bezoek, met herinneringen en praktische afspraken. Na het bezoek kan er ook een vriendelijke opvolging komen met de vraag om een review achter te laten.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03 / MINDER NO-SHOWS</span>
+            <h3>Met of zonder voorschot</h3>
+            <p>Jij kiest wat past: gasten reserveren zonder vooraf te betalen, of je werkt met een afgesproken reservatiekost of voorschot. Een voorschot kan helpen om no-shows te beperken.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">04 / MEER ZICHTBAARHEID</span>
+            <h3>Vindbaar en top of mind</h3>
+            <p>We helpen je Google-bedrijfsvermelding en Tripadvisor-profiel in één aanpak te verzorgen. Acties, wedstrijden en een eigen nieuwsbrief kunnen extra bezoekers aantrekken en klanten laten terugkomen.</p>
+          </article>
+        </div>
+        <p class="booking-note">Voor nieuwsbrieven houden we rekening met GDPR/AVG, duidelijke toestemming en uitschrijven. We spreken vooraf af wie toegang heeft tot klantgegevens en welke beveiligingsmaatregelen passen. Geen online systeem kan absolute bescherming tegen elk risico garanderen.</p>
+        <div class="section-action">
+          <a class="button" href="#contact">Bespreek jouw reservatiesysteem <span aria-hidden="true">&nbsp;↗</span></a>
+        </div>
       </div>
     </section>
     <section class="section" id="realisaties" aria-labelledby="realisaties-title">
