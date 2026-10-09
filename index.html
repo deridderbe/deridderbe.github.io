@@ -4,9 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101116">
-  <meta name="description" content="De Ridder bouwt websites voor restaurants, brasserieën en elke onderneming die reservaties wil ontvangen en opvolgen.">
+  <meta name="description" content="De Ridder bouwt en onderhoudt websites met reservatiesystemen en beheert sociale media voor restaurants, brasserieën en andere sectoren. Oplossingen vanaf €100 per maand.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <title>De Ridder — websites die reservaties binnenhalen</title>
+  <link rel="canonical" href="https://deridder.be/">
   <link rel="icon" href="assets/logo-de-ridder.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="De Ridder">
+  <meta property="og:title" content="De Ridder — websites, onderhoud en sociale media">
+  <meta property="og:description" content="Websites met reservaties, websiteonderhoud en socialemediabeheer. Oplossingen vanaf €100 per maand.">
+  <meta property="og:url" content="https://deridder.be/">
+  <meta property="og:image" content="https://deridder.be/assets/logo-de-ridder.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://deridder.be/#organization",
+          "name": "De Ridder",
+          "url": "https://deridder.be/",
+          "logo": "https://deridder.be/assets/logo-de-ridder.png",
+          "email": "info@deridder.be",
+          "description": "Websites met reservatiesystemen, websiteonderhoud en socialemediabeheer."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://deridder.be/#website",
+          "url": "https://deridder.be/",
+          "name": "De Ridder",
+          "inLanguage": "nl-BE",
+          "publisher": { "@id": "https://deridder.be/#organization" }
+        }
+      ]
+    }
+  </script>
   <style>
     :root {
       color-scheme: dark;
@@ -59,6 +93,10 @@
     .card { min-height: 208px; padding: 26px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
     .card-number { color: var(--teal); font-size: .8rem; font-weight: 750; letter-spacing: .12em; }
     h3 { margin: 18px 0 8px; font-size: 1.18rem; letter-spacing: -.02em; }
+    .starting-price { margin-top: 20px; padding: 24px 26px; border: 1px solid rgba(39,208,189,.35); border-radius: 10px; background: linear-gradient(110deg, rgba(120,105,255,.13), rgba(39,208,189,.08)); }
+    .starting-price p { margin: 0; color: var(--muted); }
+    .starting-price h3 { margin: 0 0 5px; font-size: clamp(1.2rem, 2.4vw, 1.55rem); }
+    .starting-price strong { color: var(--teal); }
     .reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
     .reference-card { overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
     .reference-brand { display: flex; min-height: 150px; align-items: center; justify-content: center; padding: 20px; background: #f4f4f6; }
@@ -156,6 +194,10 @@
             <p>Een duidelijke flow om aanvragen en reservaties op te volgen, zodat jij meer tijd hebt voor je klanten.</p>
           </article>
         </div>
+        <aside class="starting-price" aria-label="Websiteoplossingen vanaf 100 euro per maand">
+          <h3>Een oplossing voor elk budget</h3>
+          <p>Onze oplossingen starten vanaf <strong>€100 per maand</strong>. We bekijken samen wat past bij jouw zaak en wat je nodig hebt.</p>
+        </aside>
       </div>
     </section>
     <section class="section" id="realisaties" aria-labelledby="realisaties-title">
