@@ -55,10 +55,20 @@
     .section-heading { max-width: 690px; margin: 0 0 32px; }
     h2 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; letter-spacing: -.045em; }
     .section-heading p, .card p { margin: 0; color: var(--muted); }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
     .card { min-height: 208px; padding: 26px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
     .card-number { color: var(--teal); font-size: .8rem; font-weight: 750; letter-spacing: .12em; }
     h3 { margin: 18px 0 8px; font-size: 1.18rem; letter-spacing: -.02em; }
+    .reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .reference-card { overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+    .reference-brand { display: flex; min-height: 150px; align-items: center; justify-content: center; padding: 20px; background: #f4f4f6; }
+    .reference-brand img { display: block; width: 150px; height: 130px; object-fit: contain; }
+    .reference-wordmark { color: #17181e; font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -.07em; text-decoration: none; }
+    .reference-copy { padding: 24px; }
+    .reference-copy h3 { margin-top: 0; }
+    .reference-copy p { margin: 0; color: var(--muted); }
+    .reference-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 16px; }
+    .reference-links a { color: var(--teal); font-size: .9rem; text-decoration-thickness: 1px; text-underline-offset: 4px; }
     .contact-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 72px; align-items: start; }
     .contact-copy p { color: var(--muted); }
     .email-link { display: inline-block; margin-top: 8px; color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 5px; }
@@ -77,7 +87,7 @@
     :focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
     @media (max-width: 760px) {
       .hero { padding: 78px 0 76px; }
-      .cards { grid-template-columns: 1fr; }
+      .cards, .reference-grid { grid-template-columns: 1fr; }
       .card { min-height: auto; }
       .contact-layout { grid-template-columns: 1fr; gap: 32px; }
       .section { padding: 60px 0; }
@@ -121,24 +131,66 @@
       <div class="wrap">
         <div class="section-heading">
           <p class="eyebrow">Een oplossing die voor je werkt</p>
-          <h2 id="aanpak-title">Van eerste klik tot bevestigde reservatie.</h2>
-          <p>We zijn gespecialiseerd in websites voor restaurants en brasserieën, maar reservaties zijn niet gebonden aan één sector. Dezelfde aanpak werkt voor elke onderneming waar klanten een moment willen vastleggen.</p>
+          <h2 id="aanpak-title">Een sterke online aanwezigheid, goed opgevolgd.</h2>
+          <p>We zijn gespecialiseerd in websites voor restaurants en brasserieën, maar reservaties zijn niet gebonden aan één sector. Dezelfde aanpak werkt voor elke onderneming waar klanten een moment willen vastleggen. Ook na de lancering blijven we betrokken.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <span class="card-number">01 / WEBSITE</span>
-            <h3>Jouw zaak, sterk online</h3>
-            <p>Een verzorgde website die je aanbod duidelijk toont en bezoekers makkelijk de volgende stap laat zetten.</p>
+            <span class="card-number">01 / WEBSITE &amp; ONDERHOUD</span>
+            <h3>Jouw website blijft in goede handen</h3>
+            <p>We bouwen een verzorgde website en nemen ook het onderhoud ervan voor onze rekening. Zo blijft alles actueel en blijft je site goed werken.</p>
           </article>
           <article class="card">
             <span class="card-number">02 / RESERVEREN</span>
             <h3>Reserveren zonder omwegen</h3>
-            <p>Klanten kunnen online een tafel of afspraak aanvragen, op een manier die past bij jouw zaak.</p>
+            <p>Klanten kunnen online een tafel of afspraak aanvragen, op een manier die past bij jouw zaak en sector.</p>
           </article>
           <article class="card">
-            <span class="card-number">03 / OPVOLGING</span>
+            <span class="card-number">03 / SOCIALE MEDIA</span>
+            <h3>Jouw zaak in de kijker</h3>
+            <p>Volgens een afgesproken werkwijze beheren we je sociale media om extra bezoekers aan te trekken en je zaak in de kijker te zetten.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">04 / OPVOLGING</span>
             <h3>Overzicht en opvolging</h3>
-            <p>Een duidelijke flow om aanvragen op te volgen, zodat jij meer tijd hebt voor je klanten.</p>
+            <p>Een duidelijke flow om aanvragen en reservaties op te volgen, zodat jij meer tijd hebt voor je klanten.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="realisaties" aria-labelledby="realisaties-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Een blik op ons werk</p>
+          <h2 id="realisaties-title">Websites en zichtbaarheid in de praktijk.</h2>
+          <p>Een paar recente voorbeelden van websites en online communicatie.</p>
+        </div>
+        <div class="reference-grid">
+          <article class="reference-card">
+            <a class="reference-brand" href="https://www.brasseriebard.be/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek de website van Brasserie Bard">
+              <img src="assets/logo-brasserie-bard.jpg" alt="Logo van Brasserie Bard" width="300" height="274" loading="lazy">
+            </a>
+            <div class="reference-copy">
+              <h3>Brasserie Bard</h3>
+              <p>Een recente referentie voor een brasserie, met website en sociale media.</p>
+              <div class="reference-links">
+                <a href="https://www.brasseriebard.be/" target="_blank" rel="noopener noreferrer">Website <span aria-hidden="true">↗</span></a>
+                <a href="https://www.instagram.com/wwwbrasseriebardbe/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                <a href="https://www.facebook.com/wwwbrasseriebardbe" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="reference-card">
+            <a class="reference-brand" href="https://www.laverra.be/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek de website van Laverra">
+              <span class="reference-wordmark">Laverra</span>
+            </a>
+            <div class="reference-copy">
+              <h3>Laverra</h3>
+              <p>Een voorbeeld van een website voor een andere sector.</p>
+              <div class="reference-links">
+                <a href="https://www.laverra.be/" target="_blank" rel="noopener noreferrer">Website <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
